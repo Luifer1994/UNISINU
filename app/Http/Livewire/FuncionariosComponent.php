@@ -59,7 +59,7 @@ class FuncionariosComponent extends Component
             'id_sede'        => 'required',
         ]);
 
-        // CREAMOS UN NUEVO DEPARTAMENTO
+        // CREAMOS UN NUEVO FUNCIONARIO
         $newFuncionario = Funcionarios::create([
             'cedula'    => $this->cedula,
             'codigo'    => $this->codigo,

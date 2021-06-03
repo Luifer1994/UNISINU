@@ -4,10 +4,12 @@ use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\CiudadesController;
 use App\Http\Controllers\DepartaentosController;
 use App\Http\Controllers\EspaciosController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\FuncionariosController;
 use App\Http\Controllers\InstitucionesController;
 use App\Http\Controllers\PaisesController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ReservasController;
 use App\Http\Controllers\SedesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -41,3 +43,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/categorias',[CategoriasCo
 Route::middleware(['auth:sanctum', 'verified'])->get('/funcionarios',[FuncionariosController::class, 'index'])->name('funcionarios');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/espacios',[EspaciosController::class, 'index'])->name('espacios');
+
+Route::middleware(['auth:sanctum', 'verified'])->resource('/reservas/{id?}',EventController::class)->names('reservas');

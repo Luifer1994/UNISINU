@@ -5,9 +5,11 @@
     <title>@yield('titulo')</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
-    <link href='{{ asset('fullcalendar/lib/main.css') }}' rel='stylesheet' />
-    <script src='{{ asset('fullcalendar/lib/main.js') }}'></script>
-    <script src='{{ asset('fullcalendar/core/locales/es.js') }}'></script>
+    {{-- Script y Estilos de fullcalendar --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/locales-all.js"></script>
+
 
     <!-- Fonts and icons -->
     <script src="{{ asset('assets/js/plugin/webfont/webfont.min.js') }}"></script>

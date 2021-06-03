@@ -12,9 +12,12 @@ class Reservas extends Model
     protected $fillable = [
         'id_espacio',
         'id_user',
+        'cedula_user',
         'fecha',
         'hora_inicio',
         'hora_final',
         'estado',
+        'tittle',
+        'description',
     ];
 }

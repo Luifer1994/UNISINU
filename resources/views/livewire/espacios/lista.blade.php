@@ -24,6 +24,7 @@
             </div>
         </div>
     </div>
+
     <div class="card-body">
         <input wire:model='searh' class="form-control" placeholder="BUSCAR">
         <div class="card-body table-responsive">
